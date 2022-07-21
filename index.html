@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <table>
+                <tr>
+                    <td>Введите числа, чтобы занести их в массив.</td>
+                    <td><input type="text" id="info" class="number"></td>
+                    <td><input type="button" class="button" value="Добавить числа" onclick="writeNum()"></td> 
+                </tr>
+                <tr>
+                    <td>Укажите количество символов для рандомной генерации, если вам лень (до 15 чисел).
+                        Числа будут сгенерированы от -50 до 50.
+                    </td>
+                    <td><input type="number" id="numbers" class="number"></td>
+                    <td><input type="button" class="button" value="Добавить числа" onclick="randGenerate ()"></td>
+                </tr>
+                <tr>
+                    <td>Показать числа в массиве.</td>
+                    <td><input class="button" value="Все числа" type="button" onclick="showMassive ()"></td>
+                </tr>
+                <tr>
+                    <td>Узнать среднее арифметическое всех чисел массив.</td>
+                    <td><input class="button" value="Ср. арифм." onclick="mediumOfNumber()" type="button"></td>   
+                </tr>
+                <tr>
+                    <td>Узнать самое большое и самое маленькое число.</td>
+                    <td><input class="button" value="Самое большое 
+                        и маленькое" onclick="extremeNumbers ()" type="button"></td>   
+                </tr>
+                <tr>
+                    <td>Сбросить массив в ручную.</td>
+                    <td><input class="button" value="Сброс" onclick="nullMassive()" type="button"></td>   
+                </tr>
+                <tr>
+                    <td>Генерация случайного имени</td>
+                    <td><input class="button" value="Генерировать" onclick="nameGenerate ()" type="button"></td> 
+                </tr>
+                <tr>
+                    <td>Генерация случайного номера</td>
+                    <td><input class="button" value="Генерировать" onclick="telephoneNumber ()" type="button"></td> 
+                </tr>
+            </table>
+        </form>
+        
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
